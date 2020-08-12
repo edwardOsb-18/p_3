@@ -1,0 +1,243 @@
+<html lang="en-PE">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Edward Santamaria Benites" />
+    <meta name="description" content="mensajes cristianos" />
+    <meta name="keywords" content="mensaje,cristiano,biblia,frases" />
+    <link rel="icon" href="ed.png" type="image/x-icon"><!--64x64 imagen de la pagina en la pestaña-->
+    <title>mensajes cristianos</title>
+   
+    
+
+
+
+<style>
+
+
+#div2{background-color: red;
+
+
+overflow: hidden;
+
+
+}
+
+/*
+@keyframes edward {
+  10% {opacity:0.7};
+  25% {opacity:0.5};
+60% {opacity:0};
+85% {opacity: 0;};
+100%{opacity:0};
+
+
+}
+*/
+#div2{
+  position: relative;
+}
+
+#imagen1{
+  transition: opacity 5s linear;
+}
+
+#imagen2,#imagen5,#imagen3{
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity 2s linear;
+}
+
+
+
+</style>
+
+    
+
+</head>
+<body>
+
+<section>
+
+
+<button type="button" id="isquierda" >  atras</button>
+
+
+<button type="button" id="derecha">  siguiente</button>
+
+<div id="div1">
+
+
+<h1  id="titulo1" style="font-size: 2rem; font-weight: 800;">edward santmaria benites</h1>
+
+<p id="p2">Lorem ipsum dolor sit,<span>amet consectetur adipisicing elit. </span> Inventore, nihil quam? Incidunt quos explicabo fugiat ipsum sapiente totam inventore eaque!
+</p>
+
+<div id="div2" >
+  
+  <img  id="imagen1" style="display: block;" src="imagenes/3.jpg" width="100%"   alt="">
+  <img  id="imagen2" src="imagenes/edhu.jpg" width="100%"   alt="">
+  <img  id="imagen3" src="imagenes/hulk_thoor.jpg" width="100%"   alt="">
+</div>
+
+</div>
+
+<p id="demo"></p>
+<p >Lorem ipsum dolor sit,<span>amet consectetur adipisicing elit. </span> Inventore, nihil quam? Incidunt quos explicabo fugiat ipsum sapiente totam inventore eaque!
+</p>
+<p >Lorem ipsum dolor sit,<span>amet consectetur adipisicing elit. </span> Inventore, nihil quam? Incidunt quos explicabo fugiat ipsum sapiente totam inventore eaque!
+</p>
+</section>
+
+<script>
+
+var i=2;
+
+document.getElementById("isquierda").addEventListener("click",function(){
+if(i==0){
+i=2;
+document.images[2].style.opacity="1";
+document.images[1].style.opacity="1";
+
+}
+else{
+  
+document.images[i].style.opacity="0";
+i--;
+  }
+  
+});
+
+
+document.getElementById("derecha").addEventListener("click",function(){
+  document.images[1].style.transition="opacity 2s linear";
+i++;
+if(i==3){
+  i=0;
+  document.images[1].style.transition="opacity 0s";
+  document.images[1].style.opacity="0";
+  
+  document.images[2].style.opacity="0";
+  
+
+}
+else{
+document.images[i].style.opacity="1";
+}
+});
+
+
+
+
+
+
+
+
+
+/*
+document.getElementById("darle").addEventListener("click",function(){
+ if(document.getElementById("div2").style.display=="none") 
+ {   document.getElementById("div2").style.display="";  
+      
+       }
+ else{
+  document.getElementById("div2").style.display="none";
+ }
+  
+}
+
+
+
+);
+*/
+
+/*
+
+document.getElementById("div2").addEventListener("animationend",function(){
+
+  this.style.display="none";
+
+});
+
+*/
+
+
+/*
+document.getElementById("darle").addEventListener("click",function(){
+
+  document.getElementById("div2").style.opacity="0";
+
+
+  document.getElementById("div2").addEventListener("transitionend",function(){
+
+this.style.display="none";
+
+});
+
+
+}
+
+);
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+</body>
+</html>
